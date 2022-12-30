@@ -1,0 +1,69 @@
+<!-- This is a Super Hunter Website created using HTML5,CSS,JS.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mukhesh Kumar V">
+    <title> Super Hunter </title>
+    <!-- Basic CSS file -index.css-->
+    <link rel="stylesheet" href="index.css">
+    <!--Using Bootstrap Classes to style the Stopwatch Website -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body >
+    <h1 class="display-1 text-center" id = "title"><b>Super Heros List(characters)</b> </h1>
+    <figure class="text-center">
+        <blockquote class="blockquote">
+            <p>Obatined from an API Source.(Marvel API)</p>
+        </blockquote>
+    </figure>
+    <br>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="fav">Favourite Super Heros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li><li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id = "name2">
+                <button class="btn btn-outline-success q"type="button">Search</button>
+            </form>
+        </ul>
+    <br>
+        <div id = "hero">
+        <ul class="list-group" id = "super-heros-list">
+            
+        </ul>
+</div>
+    <!--The Stopwatch Related Functionality JS is written in the "index.js" -->
+    
+    <!--Using Bootstrap JS to the Stopwatch Website -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Generatign MD5 hash using CrptoJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script>
+        var public= "8bec8b766428aa3fb2f14f052573f734"
+        var private = "1195ac89084f07811743d453706d0f1ef82d5a06"
+        var time = "1"
+        var hash = CryptoJS.MD5(time+private+public).toString();
+    </script>
+    
+    <!--local java scprit file -->
+    <script src="index.js"></script>
+</body>
+
+</html>
